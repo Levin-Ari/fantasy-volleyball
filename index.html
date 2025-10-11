@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Big Ten Volleyball Standings</title>
+    <link rel="stylesheet" href = "stylesheet.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script src="scoreboardloader.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🏐 Dream B1G's Fantasy Volleyball 🏐</h1>
+            <p>2025 Big Ten Season Standings</p>
+        </div>
+
+        <div id="loading" class="loading">Loading Standings...</div>
+        <div id="error" class="error" style="display: none;"></div>
+
+        <div id="content" style="display: none;">
+            <div class="summary-section">
+                <div class="card">
+                    <h2>🏆 Top Teams</h2>
+                    <table class="summary-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Team Name</th>
+                                <th>Points</th>
+                            </tr>
+                        </thead>
+                        <tbody id="top-teams-body"></tbody>
+                    </table>
+                </div>
+                <div class="card">
+                    <h2>⭐ Top Players</h2>
+                    <table class="summary-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Player</th>
+                                <th>Team</th>
+                                <th>Points</th>
+                            </tr>
+                        </thead>
+                        <tbody id="top-players-body"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="full-tables-section">
+                <div class="full-table-card">
+                    <h2>📊 All Teams</h2>
+                    <table class="full-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Team Name</th>
+                                <th>Setter 1</th>
+                                <th>Hitter 1</th>
+                                <th>Middle 1</th>
+                                <th>Libero 1</th>
+                                <th>Setter 2</th>
+                                <th>Hitter 2</th>
+                                <th>Middle 2</th>
+                                <th>Wildcard</th>
+                                <th>Total Points</th>
+                            </tr>
+                        </thead>
+                        <tbody id="full-teams-body"></tbody>
+                    </table>
+                </div>
+
+                <div class="full-table-card">
+                    <h2>💪 All Big Ten Players</h2>
+                    <table class="full-table">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Player</th>
+                                <th>Team</th>
+                                <th>Assists</th>
+                                <th>Kills</th>
+                                <th>Digs</th>
+                                <th>Blocks</th>
+                                <th>Aces</th>
+                                <th>Fantasy Points</th>
+                                <th>Pts per Set</th>
+                            </tr>
+                        </thead>
+                        <tbody id="full-players-body"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
