@@ -27,7 +27,7 @@ jobs:
       with:
         python-version: '3.10'
     - name: Install all necessary packages
-      run: pip install pandas json requests
+      run: pip install pandas requests
     - name: Updating the Big Ten API
       run:  python fantasyvb.py
     - name: Commit and push any changes
