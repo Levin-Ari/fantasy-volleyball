@@ -31,7 +31,6 @@ for player in data['data']:
     row = {}
     row['name'] = player['full_name']
     row['team'] = player['team_market']
-    players.append(row)
     stats = player['data']
     row['sets'] = next((item['periods'] for item in stats if 'periods' in item), None)
     row['assists'] = next((item['assists'] for item in stats if 'assists' in item), None)
@@ -39,6 +38,7 @@ for player in data['data']:
     row['digs'] = next((item['digs'] for item in stats if 'digs' in item), None)
     row['blocks'] = next((item['blocks_pts'] for item in stats if 'blocks_pts' in item), None)
     row['aces'] = next((item['aces'] for item in stats if 'aces' in item), None)
+    players.append(row)
 
 # Organize and clean the DataFrame
 players_df = pd.DataFrame(players)
